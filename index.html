@@ -7,115 +7,140 @@
 
 <link rel="stylesheet" href="style.css">
 
-<!-- Icons -->
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
+
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- HEADER -->
 <header>
 <div class="logo">🌿 Pretty Life</div>
 
-<nav>
+<nav id="navbar">
 <a href="#">Home</a>
 <a href="#shop">Shop</a>
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<div class="cart-icon">
-<i class="fa-solid fa-cart-shopping"></i>
+<div class="icons">
+<div class="cart-icon" onclick="toggleCart()">
+🛒 <span id="cart-count">0</span>
+</div>
+
+<div class="burger" onclick="toggleMenu()">
+<i class="fa-solid fa-bars"></i>
+</div>
 </div>
 </header>
 
 
-<!-- ================= HERO ================= -->
+<!-- HERO -->
 <section class="hero">
 <div class="hero-content">
 <h1>Fresh • Healthy • Sweet</h1>
-<p>Premium Dry Fruits For Your Beautiful Lifestyle</p>
-<button>Shop Now</button>
+<p>At Pretty Life Dry Fruits, we provide high-quality natural dry fruits,</p>
+<p>carefully prepared and hygienically packed to support the health and well-being of every family.</p>
+<a href="#shop"><button>Shop Now</button></a>
 </div>
 </section>
 
 
-<!-- ================= DISCOUNT ================= -->
+<!-- DISCOUNT -->
 <section class="discount">
 <h2>🎉 Special 20% Discount This Week!</h2>
 <p>Order now and enjoy healthy savings 🌿</p>
+<p>Premium gift boxes are available for birthdays, weddings, and company events. Custom orders are welcome.</p>
 </section>
 
 
-<!-- ================= CATEGORIES ================= -->
-<section class="categories">
-<h2>Choose Your Favorite</h2>
-
-<div class="category-grid">
-<div class="cat-card">Lemon</div>
-<div class="cat-card">Cashews</div>
-<div class="cat-card">Walnuts</div>
-<div class="cat-card">Raisins</div>
-<div class="cat-card">Dates</div>
-<div class="cat-card">Mixed Nuts</div>
-</div>
-</section>
-
-
-<!-- ================= FEATURED PRODUCTS ================= -->
+<!-- PRODUCTS -->
 <section id="shop" class="featured">
 <h2>Featured Products</h2>
 
 <div class="product-grid">
 
 <div class="product-card">
-<img src="lemon image.jpg">
-<h3>Premium Almonds</h3>
-<p class="price">Ks 12,000</p>
+<img src="assets/images/Banana.jpg">
+<h3>Premium Banana</h3>
+<p class="price">Bhat 50</p>
+<button onclick="addToCart('Premium Banana',50)">Add to Cart</button>
 </div>
 
 <div class="product-card">
-<img src="https://images.unsplash.com/photo-1615486367951-69b9caa1d0df">
-<h3>Luxury Cashews</h3>
-<p class="price">Ks 15,000</p>
+<img src="assets/images/Grape friuts.jpg">
+<h3>Grape Fruits</h3>
+<p class="price">Bhat 100</p>
+<button onclick="addToCart('Grape Fruits',100)">Add to Cart</button>
 </div>
 
 <div class="product-card">
-<img src="https://images.unsplash.com/photo-1590080877777-4a0c65de7ad2">
-<h3>Organic Walnuts</h3>
-<p class="price">Ks 18,000</p>
+<img src="assets/images/lime.jpg">
+<h3>Lime</h3>
+<p class="price">Bhat 40</p>
+<button onclick="addToCart('Lime',40)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="assets/images/Orange.jpg">
+<h3>Orange</h3>
+<p class="price">Bhat 70</p>
+<button onclick="addToCart('Orange',70)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="assets/images/Pineapple.jpg">
+<h3>Pineapple</h3>
+<p class="price">Bhat 80</p>
+<button onclick="addToCart('Pineapple',80)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="assets/images/strawberries.jpg">
+<h3>Strawberries</h3>
+<p class="price">Bhat 100</p>
+<button onclick="addToCart('Strawberries',100)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="assets/images/Sunkirts.jpg">
+<h3>Sunkirts</h3>
+<p class="price">Bhat 150</p>
+<button onclick="addToCart('Sunkirts',150)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="assets/images/kiwi.jpg">
+<h3>Kiwi</h3>
+<p class="price">Bhat 130</p>
+<button onclick="addToCart('Kiwi',130)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="assets/images/apple.jpg">
+<h3>Apple</h3>
+<p class="price">Bhat 120</p>
+<button onclick="addToCart('Apple',120)">Add to Cart</button>
 </div>
 
 </div>
 </section>
 
 
-<!-- ================= ABOUT ================= -->
+<!-- ABOUT -->
 <section id="about" class="about">
 <h2>About Pretty Life</h2>
 <p>
-At Pretty Life, we carefully select the finest dry fruits
-to provide freshness, quality and natural goodness.
-Your health is our priority.
+We carefully select the finest dry fruits to provide freshness,
+quality and natural goodness. Your healthy lifestyle starts here.
 </p>
 </section>
 
 
-<!-- ================= CUSTOMER MESSAGE ================= -->
-<section class="message">
-<h2>Why Customers Love Us ❤️</h2>
-<p>✔ 100% Fresh Products</p>
-<p>✔ Fast Delivery</p>
-<p>✔ Affordable Price</p>
-<p>✔ Trusted Quality</p>
-</section>
-
-
-<!-- ================= CONTACT ================= -->
+<!-- CONTACT -->
 <section id="contact" class="contact">
 <h2>Contact Us</h2>
-
 <p><i class="fa-solid fa-envelope"></i> prettylife@gmail.com</p>
 <p><i class="fa-solid fa-phone"></i> 09-450516133</p>
 
@@ -126,10 +151,17 @@ Your health is our priority.
 </section>
 
 
-<!-- ================= FOOTER ================= -->
-<footer>
-© 2026 Pretty Life. All Rights Reserved.
-</footer>
+<!-- CART POPUP -->
+<div id="cart" class="cart-popup">
+<h3>Your Cart</h3>
+<div id="cart-items"></div>
+<h4>Total: Bhat <span id="total">0</span></h4>
+<button onclick="toggleCart()">Close</button>
+</div>
+
+
+<!-- LOAD JS -->
+<script src="java.js"></script>
 
 </body>
 </html>
